@@ -1,0 +1,1024 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+December 22, 2020 - 02:36:11
+Django version 3.1.4, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[22/Dec/2020 02:48:24] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 02:49:06] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 02:50:34] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 02:51:05] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 02:55:45] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 02:58:12] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 02:59:17] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 02:59:46] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 02:59:52] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 03:00:48] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:00:48] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:05:54] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:05:57] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:06:08] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 03:07:02] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:08:18] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 03:08:23] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:08:56] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:09:55] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:09:59] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:10:38] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 03:10:42] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:28:06] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:28:17] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 03:28:19] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:28:21] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 03:28:23] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 03:28:37] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 04:11:36] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 05:28:32] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 05:43:22] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 05:44:38] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 05:44:44] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 05:44:50] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 05:45:04] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 05:45:37] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 05:45:47] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 05:46:00] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 18, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[22/Dec/2020 05:46:04] "GET /node/?node_id=107796&depth=1 HTTP/1.1" 500 61745
+[22/Dec/2020 05:50:03] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 05:50:04] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 05:50:06] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 05:51:22] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 05:51:26] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 05:51:30] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[22/Dec/2020 05:51:32] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 05:51:37] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 05:51:46] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 05:51:48] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 05:51:49] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 05:51:53] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 05:51:57] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 05:52:23] "GET /get_algorithms/ HTTP/1.1" 200 550
+[22/Dec/2020 05:52:24] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 05:52:28] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:01:08] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:02:30] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:02:34] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:04:06] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:04:09] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 16, in get_json_by_node_id_and_depth_from_neo4j
+    data = graph.run(cypher).data()
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/database/__init__.py", line 709, in run
+    return self.auto().run(cypher, parameters, **kwparameters)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/database/work.py", line 128, in run
+    readonly=self.readonly, hydrant=hydrant)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/client/__init__.py", line 936, in auto_run
+    result = cx.auto_run(graph_name, cypher, parameters, readonly=readonly)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/client/http.py", line 183, in auto_run
+    rs.audit()
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/client/http.py", line 448, in audit
+    raise failure
+py2neo.database.work.ClientError: [Statement.SyntaxError] Invalid input '4': expected whitespace, comment, '{', node labels, MapLiteral, a parameter, a parameter (old syntax), a relationship pattern, '(', '.', '[', "=~", IN, STARTS, ENDS, CONTAINS, IS, '^', '*', '/', '%', '+', '-', '=', '~', "<>", "!=", '<', '>', "<=", ">=", AND, XOR, OR, FROM GRAPH, CONSTRUCT, LOAD CSV, START, MATCH, UNWIND, MERGE, CREATE UNIQUE, CREATE, SET, DELETE, REMOVE, FOREACH, WITH, CALL, RETURN, UNION, ';' or end of input (line 1, column 45 (offset: 44))
+"match p=(n)-[*1..2]-() where n.id=Component 4 with extract(x in nodes(p) | x) as ns, extract(x in relationships(p) | {start: id(startnode(x)), end: id(endnode(x)), rel: type(x), id: id(x), properties: properties(x)}) as rs, n unwind ns as na unwind rs as ra return collect(DISTINCT na),collect(DISTINCT ra), n"
+                                             ^
+[22/Dec/2020 06:07:44] "GET /node/?node_id=Component+4&depth=2 HTTP/1.1" 500 90816
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 16, in get_json_by_node_id_and_depth_from_neo4j
+    data = graph.run(cypher).data()
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/database/__init__.py", line 709, in run
+    return self.auto().run(cypher, parameters, **kwparameters)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/database/work.py", line 128, in run
+    readonly=self.readonly, hydrant=hydrant)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/client/__init__.py", line 936, in auto_run
+    result = cx.auto_run(graph_name, cypher, parameters, readonly=readonly)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/client/http.py", line 183, in auto_run
+    rs.audit()
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/client/http.py", line 448, in audit
+    raise failure
+py2neo.database.work.ClientError: [Statement.SyntaxError] Invalid input '4': expected whitespace, comment, '{', node labels, MapLiteral, a parameter, a parameter (old syntax), a relationship pattern, '(', '.', '[', "=~", IN, STARTS, ENDS, CONTAINS, IS, '^', '*', '/', '%', '+', '-', '=', '~', "<>", "!=", '<', '>', "<=", ">=", AND, XOR, OR, FROM GRAPH, CONSTRUCT, LOAD CSV, START, MATCH, UNWIND, MERGE, CREATE UNIQUE, CREATE, SET, DELETE, REMOVE, FOREACH, WITH, CALL, RETURN, UNION, ';' or end of input (line 1, column 45 (offset: 44))
+"match p=(n)-[*1..2]-() where n.id=Component 4 with extract(x in nodes(p) | x) as ns, extract(x in relationships(p) | {start: id(startnode(x)), end: id(endnode(x)), rel: type(x), id: id(x), properties: properties(x)}) as rs, n unwind ns as na unwind rs as ra return collect(DISTINCT na),collect(DISTINCT ra), n"
+                                             ^
+[22/Dec/2020 06:07:46] "GET /node/?node_id=Component+4&depth=2 HTTP/1.1" 500 90816
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 16, in get_json_by_node_id_and_depth_from_neo4j
+    data = graph.run(cypher).data()
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/database/__init__.py", line 709, in run
+    return self.auto().run(cypher, parameters, **kwparameters)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/database/work.py", line 128, in run
+    readonly=self.readonly, hydrant=hydrant)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/client/__init__.py", line 936, in auto_run
+    result = cx.auto_run(graph_name, cypher, parameters, readonly=readonly)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/client/http.py", line 183, in auto_run
+    rs.audit()
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/py2neo/client/http.py", line 448, in audit
+    raise failure
+py2neo.database.work.ClientError: [Statement.SyntaxError] Invalid input '4': expected whitespace, comment, '{', node labels, MapLiteral, a parameter, a parameter (old syntax), a relationship pattern, '(', '.', '[', "=~", IN, STARTS, ENDS, CONTAINS, IS, '^', '*', '/', '%', '+', '-', '=', '~', "<>", "!=", '<', '>', "<=", ">=", AND, XOR, OR, FROM GRAPH, CONSTRUCT, LOAD CSV, START, MATCH, UNWIND, MERGE, CREATE UNIQUE, CREATE, SET, DELETE, REMOVE, FOREACH, WITH, CALL, RETURN, UNION, ';' or end of input (line 1, column 45 (offset: 44))
+"match p=(n)-[*1..2]-() where n.id=Component 4 with extract(x in nodes(p) | x) as ns, extract(x in relationships(p) | {start: id(startnode(x)), end: id(endnode(x)), rel: type(x), id: id(x), properties: properties(x)}) as rs, n unwind ns as na unwind rs as ra return collect(DISTINCT na),collect(DISTINCT ra), n"
+                                             ^
+[22/Dec/2020 06:07:56] "GET /node/?node_id=Component+4&depth=2 HTTP/1.1" 500 90816
+[22/Dec/2020 06:08:43] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:09:06] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:09:50] "GET /get_algorithms/ HTTP/1.1" 200 550
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+December 22, 2020 - 02:48:02
+Django version 3.1.4, using settings 'backend.settings'
+Starting development server at http://10.176.38.226:8000/
+Quit the server with CONTROL-C.
+[22/Dec/2020 06:09:52] "GET /run_algorithm/?algorithm_name=&data_name= HTTP/1.1" 200 21
+[22/Dec/2020 06:09:52] "GET /get_algorithms/ HTTP/1.1" 200 696
+[22/Dec/2020 06:09:57] "GET /get_algorithms/ HTTP/1.1" 200 696
+Start! run_id = 25
+UPDATE algorithm SET status = 2, end_time = '2020-12-22 06:09:57.499958' WHERE id = 25
+Done
+[22/Dec/2020 06:09:59] "GET /get_algorithms/ HTTP/1.1" 200 711
+[22/Dec/2020 06:10:02] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:11:11] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:11:27] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:11:45] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:11:58] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:12:05] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:12:52] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:13:00] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:14:48] "GET /get_algorithms/ HTTP/1.1" 200 711
+[22/Dec/2020 06:14:49] "GET /run_algorithm/?algorithm_name=&data_name= HTTP/1.1" 200 21
+[22/Dec/2020 06:14:49] "GET /get_algorithms/ HTTP/1.1" 200 857
+[22/Dec/2020 06:14:54] "GET /get_algorithms/ HTTP/1.1" 200 857
+Start! run_id = 26
+UPDATE algorithm SET status = 2, end_time = '2020-12-22 06:14:54.632539' WHERE id = 26
+Done
+[22/Dec/2020 06:14:55] "GET /get_algorithms/ HTTP/1.1" 200 872
+[22/Dec/2020 06:14:59] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:15:29] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:16:10] "GET /get_algorithms/ HTTP/1.1" 200 872
+[22/Dec/2020 06:16:17] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%951&data_name=%E6%95%B0%E6%8D%AE1 HTTP/1.1" 200 21
+[22/Dec/2020 06:16:18] "GET /get_algorithms/ HTTP/1.1" 200 1044
+Start! run_id = 27
+UPDATE algorithm SET status = 2, end_time = '2020-12-22 06:16:22.937864' WHERE id = 27
+Done
+[22/Dec/2020 06:16:31] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:16:35] "GET /get_algorithms/ HTTP/1.1" 200 1059
+[22/Dec/2020 06:18:12] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:18:13] "GET /get_algorithms/ HTTP/1.1" 200 1059
+[22/Dec/2020 06:18:17] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%952&data_name=%E6%95%B0%E6%8D%AE2 HTTP/1.1" 200 21
+[22/Dec/2020 06:18:18] "GET /get_algorithms/ HTTP/1.1" 200 1231
+Start! run_id = 28
+UPDATE algorithm SET status = 2, end_time = '2020-12-22 06:18:22.942682' WHERE id = 28
+Done
+[22/Dec/2020 06:18:23] "GET /get_algorithms/ HTTP/1.1" 200 1246
+[22/Dec/2020 06:18:26] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:18:29] "GET /get_algorithms/ HTTP/1.1" 200 1246
+[22/Dec/2020 06:18:37] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:18:40] "GET /get_algorithms/ HTTP/1.1" 200 1246
+[22/Dec/2020 06:18:49] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:18:58] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:19:01] "GET /get_algorithms/ HTTP/1.1" 200 1246
+[22/Dec/2020 06:19:03] "GET /run_algorithm/?algorithm_name=&data_name= HTTP/1.1" 200 21
+[22/Dec/2020 06:19:03] "GET /get_algorithms/ HTTP/1.1" 200 1392
+Start! run_id = 29
+UPDATE algorithm SET status = 2, end_time = '2020-12-22 06:19:08.573919' WHERE id = 29
+Done
+[22/Dec/2020 06:19:16] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:19:23] "GET /get_algorithms/ HTTP/1.1" 200 1407
+[22/Dec/2020 06:19:37] "GET /get_algorithms/ HTTP/1.1" 200 1407
+[22/Dec/2020 06:21:40] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:21:41] "GET /get_algorithms/ HTTP/1.1" 200 1407
+[22/Dec/2020 06:21:45] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%951&data_name=%E6%95%B0%E6%8D%AE2 HTTP/1.1" 200 21
+[22/Dec/2020 06:21:45] "GET /get_algorithms/ HTTP/1.1" 200 1579
+Start! run_id = 30
+UPDATE algorithm SET status = 2, end_time = '2020-12-22 06:21:50.766028' WHERE id = 30
+Done
+[22/Dec/2020 06:21:57] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:31:46] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:37:33] "GET /get_algorithms/ HTTP/1.1" 200 1594
+[22/Dec/2020 06:37:38] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%952&data_name=%E6%95%B0%E6%8D%AE1 HTTP/1.1" 200 21
+[22/Dec/2020 06:37:38] "GET /get_algorithms/ HTTP/1.1" 200 1766
+Start! run_id = 31
+UPDATE algorithm SET status = 2, end_time = '2020-12-22 06:37:43.664741' WHERE id = 31
+Done
+[22/Dec/2020 06:37:46] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:37:49] "GET /get_algorithms/ HTTP/1.1" 200 1781
+[22/Dec/2020 06:38:21] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:38:55] "GET /get_algorithms/ HTTP/1.1" 200 1781
+[22/Dec/2020 06:38:58] "GET /get_algorithms/ HTTP/1.1" 200 1781
+[22/Dec/2020 06:38:59] "GET /get_algorithms/ HTTP/1.1" 200 1781
+[22/Dec/2020 06:40:22] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:40:25] "GET /get_algorithms/ HTTP/1.1" 200 1781
+[22/Dec/2020 06:40:31] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%952&data_name=%E6%95%B0%E6%8D%AE1 HTTP/1.1" 200 21
+[22/Dec/2020 06:40:31] "GET /get_algorithms/ HTTP/1.1" 200 1953
+Start! run_id = 32
+UPDATE algorithm SET status = 2, end_time = '2020-12-22 06:40:36.100081' WHERE id = 32
+Done
+[22/Dec/2020 06:40:39] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 06:59:22] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[22/Dec/2020 07:00:47] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 07:03:33] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[22/Dec/2020 07:08:40] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[22/Dec/2020 07:08:56] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[30/Dec/2020 07:38:25] code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93zz\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+[30/Dec/2020 07:38:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[30/Dec/2020 07:38:25] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93êê\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+[30/Dec/2020 07:38:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[30/Dec/2020 07:38:25] code 400, message Bad request version ('%\x86Yæ\x07\x16¤HøeÞd\x979¹N\x91ÇZ\x7f\x9b\x14¦Tû\x8b\x05Tý@\x00"ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+[30/Dec/2020 07:38:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[30/Dec/2020 07:38:25] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x83PÇ\x82')
+[30/Dec/2020 07:38:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[30/Dec/2020 08:09:50] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[30/Dec/2020 08:09:54] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[30/Dec/2020 08:09:56] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:31:50] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:35:55] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:35:57] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:36:05] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:36:07] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[06/Jan/2021 07:38:06] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[06/Jan/2021 07:41:20] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:41:21] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:41:22] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:41:43] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[06/Jan/2021 07:45:15] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:45:22] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:45:24] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[06/Jan/2021 07:45:26] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[06/Jan/2021 07:45:57] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:46:09] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:46:16] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:46:21] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:46:34] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:46:46] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:46:47] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[06/Jan/2021 07:47:10] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:47:12] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[06/Jan/2021 07:47:14] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:47:16] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:47:58] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[06/Jan/2021 07:48:03] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+Not Found: /get_nodes/
+[09/Jan/2021 14:39:42] "GET /get_nodes/ HTTP/1.1" 404 2202
+Not Found: /get_nodes/
+[09/Jan/2021 14:39:53] "GET /get_nodes/ HTTP/1.1" 404 2202
+Not Found: /get_nodes/
+[09/Jan/2021 14:43:06] "GET /get_nodes/ HTTP/1.1" 404 2202
+Not Found: /get_nodes/
+[09/Jan/2021 14:43:09] "GET /get_nodes/ HTTP/1.1" 404 2202
+Not Found: /get_nodes/
+[09/Jan/2021 15:00:54] "GET /get_nodes/ HTTP/1.1" 404 2202
+Not Found: /get_nodes/
+[09/Jan/2021 15:06:30] "GET /get_nodes/ HTTP/1.1" 404 2202
+Not Found: /get_devices/
+[09/Jan/2021 15:13:28] "GET /get_devices/ HTTP/1.1" 404 2208
+Not Found: /get_devices/
+[09/Jan/2021 15:13:28] "GET /get_devices/ HTTP/1.1" 404 2208
+Not Found: /get_devices/
+[09/Jan/2021 15:13:33] "GET /get_devices/ HTTP/1.1" 404 2208
+[09/Jan/2021 16:56:19] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[09/Jan/2021 16:57:33] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[09/Jan/2021 16:57:46] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[09/Jan/2021 16:58:10] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[09/Jan/2021 16:59:05] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[09/Jan/2021 16:59:49] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[09/Jan/2021 17:00:23] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[09/Jan/2021 17:00:31] "GET /node/?node_id=130014&depth=1 HTTP/1.1" 200 7212
+[09/Jan/2021 17:02:03] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[09/Jan/2021 17:02:11] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[09/Jan/2021 17:37:06] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[09/Jan/2021 17:37:52] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[09/Jan/2021 17:37:57] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[09/Jan/2021 18:42:59] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[09/Jan/2021 18:48:40] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[09/Jan/2021 18:48:44] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[09/Jan/2021 18:48:51] "GET /node/?node_id=2009911&depth=2 HTTP/1.1" 200 58447
+[09/Jan/2021 18:50:52] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[09/Jan/2021 18:51:58] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[09/Jan/2021 18:52:07] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[09/Jan/2021 18:53:53] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[09/Jan/2021 18:54:15] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[09/Jan/2021 18:58:48] "GET /get_algorithms/ HTTP/1.1" 200 1968
+/home/wangqingqin/SiemensProject/backend/backend/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/wangqingqin/anaconda3/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/wangqingqin/SiemensProject/backend/backend/urls.py", line 18, in <module>
+    from backend.views import get_json_by_node_id_and_depth_from_neo4j, run_new_algorithm, get_all_algorithm, get_all_nodes, get_all_edges, get_all_devices, get_node_paths
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 7, in <module>
+    from algorithm import do_some_work
+ModuleNotFoundError: No module named 'algorithm'
+
+/home/wangqingqin/SiemensProject/backend/backend/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/wangqingqin/anaconda3/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/wangqingqin/SiemensProject/backend/backend/urls.py", line 18, in <module>
+    from backend.views import get_json_by_node_id_and_depth_from_neo4j, run_new_algorithm, get_all_algorithm, get_all_nodes, get_all_edges, get_all_devices, get_node_paths
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 7, in <module>
+    from algorithm import do_some_work
+ModuleNotFoundError: No module named 'algorithm'
+
+/home/wangqingqin/SiemensProject/backend/backend/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/home/wangqingqin/anaconda3/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/utils/autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/management/base.py", line 396, in check
+    databases=databases,
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/checks/registry.py", line 70, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/urls/resolvers.py", line 408, in check
+    for pattern in self.url_patterns:
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/wangqingqin/SiemensProject/backend/backend/urls.py", line 18, in <module>
+    from backend.views import get_json_by_node_id_and_depth_from_neo4j, run_new_algorithm, get_all_algorithm, get_all_nodes, get_all_edges, get_all_devices, get_node_paths
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 7, in <module>
+    from algorithm import do_some_work
+ModuleNotFoundError: No module named 'algorithm'
+
+/home/wangqingqin/SiemensProject/backend/backend/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Using backend: pytorch
+Using backend: pytorch
+[09/Jan/2021 19:31:14] "GET /get_edges/ HTTP/1.1" 200 5373
+Not Found: /favicon.ico
+[09/Jan/2021 19:31:15] "GET /favicon.ico HTTP/1.1" 404 2652
+[09/Jan/2021 19:31:23] "GET /get_edges/ HTTP/1.1" 200 5373
+[09/Jan/2021 19:31:25] "GET /get_devices/ HTTP/1.1" 200 2621
+[09/Jan/2021 19:31:26] "GET /get_edges/ HTTP/1.1" 200 5373
+[09/Jan/2021 19:31:27] "GET /get_nodes/ HTTP/1.1" 200 12665
+[09/Jan/2021 19:31:30] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[09/Jan/2021 19:31:34] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2378
+[10/Jan/2021 12:13:43] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[10/Jan/2021 12:13:44] "GET /get_algorithms/ HTTP/1.1" 200 1968
+[10/Jan/2021 12:13:44] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2378
+[10/Jan/2021 12:13:58] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2378
+[10/Jan/2021 12:14:12] "GET /get_edges/ HTTP/1.1" 200 5373
+[10/Jan/2021 12:14:13] "GET /get_nodes/ HTTP/1.1" 200 12665
+[10/Jan/2021 12:14:25] "GET /get_edges/ HTTP/1.1" 200 5373
+[10/Jan/2021 12:14:26] "GET /get_devices/ HTTP/1.1" 200 2621
+[10/Jan/2021 12:14:31] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[10/Jan/2021 12:14:37] "GET /get_algorithms/ HTTP/1.1" 200 1968
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 09, 2021 - 19:31:06
+Django version 3.1.4, using settings 'backend.settings'
+Starting development server at http://10.176.38.226:8000/
+Quit the server with CONTROL-C.
+[10/Jan/2021 12:14:46] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%951&data_name=%E6%95%B0%E6%8D%AE1 HTTP/1.1" 200 21
+[10/Jan/2021 12:14:46] "GET /get_algorithms/ HTTP/1.1" 200 2140
+[10/Jan/2021 12:14:48] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2378
+[10/Jan/2021 12:14:48] "GET /get_algorithms/ HTTP/1.1" 200 2140
+[10/Jan/2021 12:14:54] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2378
+[10/Jan/2021 12:14:55] "GET /get_algorithms/ HTTP/1.1" 200 2140
+[10/Jan/2021 12:15:02] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2378
+[10/Jan/2021 12:15:05] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[10/Jan/2021 12:15:08] "GET /get_nodes/ HTTP/1.1" 200 12863
+Start! run_id = 33
+num of black_seed 13
+shape of fea_mat (1000, 96)
+shape of adj_mat (1000, 1000)
+begin to calculate node scores
+add self loop
+Iteration    0 Loss=0.8050
+Iteration   10 Loss=0.5289
+Iteration   20 Loss=0.4630
+Iteration   30 Loss=0.4175
+Iteration   40 Loss=0.3578
+Iteration   50 Loss=0.3178
+Iteration   60 Loss=0.3213
+Iteration   70 Loss=0.3002
+Iteration   80 Loss=0.2925
+Iteration   90 Loss=0.2912
+Iteration  100 Loss=0.2578
+Iteration  110 Loss=0.3011
+Iteration  120 Loss=0.2724
+Iteration  130 Loss=0.2729
+Iteration  140 Loss=0.2470
+begin to calculate device scores
+Done
+[10/Jan/2021 12:15:15] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:15:21] "GET /node/?node_id=299&depth=1 HTTP/1.1" 500 61794
+[10/Jan/2021 12:15:30] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2377
+[10/Jan/2021 12:15:35] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:15:38] "GET /node/?node_id=0&depth=1 HTTP/1.1" 500 61774
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:15:39] "GET /node/?node_id=0&depth=1 HTTP/1.1" 500 61774
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:15:39] "GET /node/?node_id=0&depth=1 HTTP/1.1" 500 61774
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:15:39] "GET /node/?node_id=0&depth=1 HTTP/1.1" 500 61774
+[10/Jan/2021 12:15:51] "GET /get_nodes/ HTTP/1.1" 200 12863
+[10/Jan/2021 12:15:53] "GET /get_edges/ HTTP/1.1" 200 5373
+[10/Jan/2021 12:15:54] "GET /get_devices/ HTTP/1.1" 200 2617
+[10/Jan/2021 12:15:56] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[10/Jan/2021 12:15:58] "GET /get_algorithms/ HTTP/1.1" 200 2140
+[10/Jan/2021 12:16:05] "GET /get_algorithms/ HTTP/1.1" 200 2140
+[10/Jan/2021 12:16:22] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%951&data_name=%E6%95%B0%E6%8D%AE1 HTTP/1.1" 200 21
+[10/Jan/2021 12:16:22] "GET /get_algorithms/ HTTP/1.1" 200 2312
+Start! run_id = 34
+num of black_seed 13
+shape of fea_mat (1000, 96)
+shape of adj_mat (1000, 1000)
+begin to calculate node scores
+add self loop
+Iteration    0 Loss=0.8050
+Iteration   10 Loss=0.5289
+Iteration   20 Loss=0.4630
+Iteration   30 Loss=0.4175
+Iteration   40 Loss=0.3578
+Iteration   50 Loss=0.3178
+Iteration   60 Loss=0.3213
+Iteration   70 Loss=0.3002
+Iteration   80 Loss=0.2925
+Iteration   90 Loss=0.2912
+Iteration  100 Loss=0.2578
+Iteration  110 Loss=0.3011
+Iteration  120 Loss=0.2724
+Iteration  130 Loss=0.2729
+Iteration  140 Loss=0.2470
+begin to calculate device scores
+Done
+[10/Jan/2021 12:16:55] "GET /get_algorithms/ HTTP/1.1" 200 2312
+[10/Jan/2021 12:16:58] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:17:05] "GET /node/?node_id=0&depth=1 HTTP/1.1" 500 61774
+[10/Jan/2021 12:17:07] "GET /get_nodes/ HTTP/1.1" 200 12863
+[10/Jan/2021 12:17:09] "GET /get_edges/ HTTP/1.1" 200 5373
+[10/Jan/2021 12:17:10] "GET /get_devices/ HTTP/1.1" 200 2617
+[10/Jan/2021 12:17:12] "GET /get_edges/ HTTP/1.1" 200 5373
+[10/Jan/2021 12:17:14] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[10/Jan/2021 12:17:27] "GET /get_algorithms/ HTTP/1.1" 200 2312
+[10/Jan/2021 12:17:50] "GET /get_algorithms/ HTTP/1.1" 200 2312
+[10/Jan/2021 12:17:52] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[10/Jan/2021 12:18:02] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[10/Jan/2021 12:18:03] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2377
+[10/Jan/2021 12:18:05] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 200 6574
+[10/Jan/2021 12:19:32] "GET /get_algorithms/ HTTP/1.1" 200 2312
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:20:06] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:20:09] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+[10/Jan/2021 12:21:23] "GET /get_nodes/ HTTP/1.1" 200 12863
+[10/Jan/2021 12:21:24] "GET /get_edges/ HTTP/1.1" 200 5373
+[10/Jan/2021 12:21:25] "GET /get_devices/ HTTP/1.1" 200 2617
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:21:26] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61881
+[10/Jan/2021 12:21:38] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2377
+[10/Jan/2021 12:21:51] "GET /get_algorithms/ HTTP/1.1" 200 2312
+[10/Jan/2021 12:21:52] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%951&data_name=%E6%95%B0%E6%8D%AE1 HTTP/1.1" 200 21
+[10/Jan/2021 12:21:52] "GET /get_algorithms/ HTTP/1.1" 200 2484
+Start! run_id = 35
+num of black_seed 13
+shape of fea_mat (1000, 96)
+shape of adj_mat (1000, 1000)
+begin to calculate node scores
+add self loop
+Iteration    0 Loss=0.8050
+Iteration   10 Loss=0.5289
+Iteration   20 Loss=0.4630
+Iteration   30 Loss=0.4175
+Iteration   40 Loss=0.3578
+Iteration   50 Loss=0.3178
+Iteration   60 Loss=0.3213
+Iteration   70 Loss=0.3002
+Iteration   80 Loss=0.2925
+Iteration   90 Loss=0.2912
+Iteration  100 Loss=0.2578
+Iteration  110 Loss=0.3011
+Iteration  120 Loss=0.2724
+Iteration  130 Loss=0.2729
+Iteration  140 Loss=0.2470
+begin to calculate device scores
+Done
+[10/Jan/2021 12:22:32] "GET /get_algorithms/ HTTP/1.1" 200 2484
+[10/Jan/2021 12:22:34] "GET /get_algorithms/ HTTP/1.1" 200 2484
+[10/Jan/2021 12:23:07] "GET /get_algorithms/ HTTP/1.1" 200 2484
+[10/Jan/2021 12:24:10] "GET /get_algorithms/ HTTP/1.1" 200 2484
+[10/Jan/2021 12:24:12] "GET /get_nodes/ HTTP/1.1" 200 2
+[10/Jan/2021 12:24:45] "GET /get_nodes/ HTTP/1.1" 200 12762
+[10/Jan/2021 12:24:50] "GET /get_algorithms/ HTTP/1.1" 200 2484
+[10/Jan/2021 12:24:51] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%951&data_name=%E6%95%B0%E6%8D%AE1 HTTP/1.1" 200 21
+[10/Jan/2021 12:24:51] "GET /get_algorithms/ HTTP/1.1" 200 2656
+[10/Jan/2021 12:24:56] "GET /get_nodes/ HTTP/1.1" 200 12762
+Start! run_id = 36
+num of black_seed 13
+shape of fea_mat (1000, 96)
+shape of adj_mat (1000, 1000)
+begin to calculate node scores
+add self loop
+Iteration    0 Loss=0.8050
+Iteration   10 Loss=0.5289
+Iteration   20 Loss=0.4630
+Iteration   30 Loss=0.4175
+Iteration   40 Loss=0.3578
+Iteration   50 Loss=0.3178
+Iteration   60 Loss=0.3213
+Iteration   70 Loss=0.3002
+Iteration   80 Loss=0.2925
+Iteration   90 Loss=0.2912
+Iteration  100 Loss=0.2578
+Iteration  110 Loss=0.3011
+Iteration  120 Loss=0.2724
+Iteration  130 Loss=0.2729
+Iteration  140 Loss=0.2470
+begin to calculate device scores
+Done
+[10/Jan/2021 12:25:17] "GET /get_nodes/ HTTP/1.1" 200 12863
+[10/Jan/2021 12:25:22] "GET /get_algorithms/ HTTP/1.1" 200 2656
+[10/Jan/2021 12:30:04] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%951&data_name=%E6%95%B0%E6%8D%AE1 HTTP/1.1" 200 21
+[10/Jan/2021 12:30:04] "GET /get_algorithms/ HTTP/1.1" 200 2828
+[10/Jan/2021 12:30:06] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2377
+[10/Jan/2021 12:30:07] "GET /get_algorithms/ HTTP/1.1" 200 2828
+[10/Jan/2021 12:30:28] "GET /get_algorithms/ HTTP/1.1" 200 2828
+Start! run_id = 37
+num of black_seed 13
+shape of fea_mat (1000, 96)
+shape of adj_mat (1000, 1000)
+begin to calculate node scores
+add self loop
+Iteration    0 Loss=0.8050
+Iteration   10 Loss=0.5289
+Iteration   20 Loss=0.4630
+Iteration   30 Loss=0.4175
+Iteration   40 Loss=0.3578
+Iteration   50 Loss=0.3178
+Iteration   60 Loss=0.3213
+Iteration   70 Loss=0.3002
+Iteration   80 Loss=0.2925
+Iteration   90 Loss=0.2912
+Iteration  100 Loss=0.2578
+Iteration  110 Loss=0.3011
+Iteration  120 Loss=0.2724
+Iteration  130 Loss=0.2729
+Iteration  140 Loss=0.2470
+begin to calculate device scores
+Done
+[10/Jan/2021 12:30:32] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2377
+[10/Jan/2021 12:30:33] "GET /get_algorithms/ HTTP/1.1" 200 2828
+[10/Jan/2021 12:30:43] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2377
+[10/Jan/2021 12:30:44] "GET /get_algorithms/ HTTP/1.1" 200 2828
+[10/Jan/2021 12:31:01] "GET /get_algorithms/ HTTP/1.1" 200 2828
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:31:06] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+[10/Jan/2021 12:31:07] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2377
+[10/Jan/2021 12:31:09] "GET /get_algorithms/ HTTP/1.1" 200 2828
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:31:12] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+[10/Jan/2021 12:31:14] "GET /get_algorithms/ HTTP/1.1" 200 2828
+[10/Jan/2021 12:32:41] "GET /get_algorithms/ HTTP/1.1" 200 2828
+[10/Jan/2021 12:33:07] "GET /get_algorithms/ HTTP/1.1" 200 2828
+[10/Jan/2021 12:35:37] "GET /get_algorithms/ HTTP/1.1" 200 2828
+[10/Jan/2021 12:35:39] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%951&data_name=%E6%95%B0%E6%8D%AE1 HTTP/1.1" 200 21
+[10/Jan/2021 12:35:39] "GET /get_algorithms/ HTTP/1.1" 200 3000
+[10/Jan/2021 12:35:50] "GET /get_algorithms/ HTTP/1.1" 200 3000
+Start! run_id = 38
+num of black_seed 13
+shape of fea_mat (1000, 96)
+shape of adj_mat (1000, 1000)
+begin to calculate node scores
+add self loop
+Iteration    0 Loss=0.8050
+Iteration   10 Loss=0.5289
+Iteration   20 Loss=0.4630
+Iteration   30 Loss=0.4175
+Iteration   40 Loss=0.3578
+Iteration   50 Loss=0.3178
+Iteration   60 Loss=0.3213
+Iteration   70 Loss=0.3002
+Iteration   80 Loss=0.2925
+Iteration   90 Loss=0.2912
+Iteration  100 Loss=0.2578
+Iteration  110 Loss=0.3011
+Iteration  120 Loss=0.2724
+Iteration  130 Loss=0.2729
+Iteration  140 Loss=0.2470
+begin to calculate device scores
+Done
+[10/Jan/2021 12:37:20] "GET /get_algorithms/ HTTP/1.1" 200 3000
+[10/Jan/2021 12:37:44] "GET /get_algorithms/ HTTP/1.1" 200 3000
+[10/Jan/2021 12:37:46] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%951&data_name=%E6%95%B0%E6%8D%AE1 HTTP/1.1" 200 21
+[10/Jan/2021 12:37:46] "GET /get_algorithms/ HTTP/1.1" 200 3172
+Start! run_id = 39
+num of black_seed 13
+shape of fea_mat (1000, 96)
+shape of adj_mat (1000, 1000)
+begin to calculate node scores
+add self loop
+Iteration    0 Loss=0.8050
+Iteration   10 Loss=0.5289
+Iteration   20 Loss=0.4630
+Iteration   30 Loss=0.4175
+Iteration   40 Loss=0.3578
+Iteration   50 Loss=0.3178
+Iteration   60 Loss=0.3213
+Iteration   70 Loss=0.3002
+Iteration   80 Loss=0.2925
+Iteration   90 Loss=0.2912
+Iteration  100 Loss=0.2578
+Iteration  110 Loss=0.3011
+Iteration  120 Loss=0.2724
+Iteration  130 Loss=0.2729
+Iteration  140 Loss=0.2470
+begin to calculate device scores
+Done
+[10/Jan/2021 12:40:15] "GET /get_algorithms/ HTTP/1.1" 200 3172
+[10/Jan/2021 12:43:39] "GET /get_algorithms/ HTTP/1.1" 200 3172
+[10/Jan/2021 12:43:42] "GET /get_nodes/ HTTP/1.1" 200 2
+[10/Jan/2021 12:43:43] "GET /get_edges/ HTTP/1.1" 200 2
+[10/Jan/2021 12:43:44] "GET /get_devices/ HTTP/1.1" 200 2
+[10/Jan/2021 12:44:24] "GET /get_devices/ HTTP/1.1" 200 2342
+[10/Jan/2021 12:44:27] "GET /get_nodes/ HTTP/1.1" 200 12762
+[10/Jan/2021 12:44:28] "GET /get_edges/ HTTP/1.1" 200 5473
+[10/Jan/2021 12:44:28] "GET /get_devices/ HTTP/1.1" 200 2342
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:44:30] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:44:31] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:44:33] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+[10/Jan/2021 12:44:36] "GET /node/?node_id=0&depth=1 HTTP/1.1" 200 35734
+[10/Jan/2021 12:44:53] "GET /node/?node_id=311&depth=1 HTTP/1.1" 200 35734
+[10/Jan/2021 12:45:00] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2347
+[10/Jan/2021 12:45:01] "GET /get_algorithms/ HTTP/1.1" 200 3172
+[10/Jan/2021 12:45:04] "GET /run_algorithm/?algorithm_name=%E7%AE%97%E6%B3%951&data_name=%E6%95%B0%E6%8D%AE1 HTTP/1.1" 200 21
+[10/Jan/2021 12:45:04] "GET /get_algorithms/ HTTP/1.1" 200 3344
+Start! run_id = 40
+num of black_seed 13
+shape of fea_mat (1000, 96)
+shape of adj_mat (1000, 1000)
+begin to calculate node scores
+add self loop
+Iteration    0 Loss=0.8050
+Iteration   10 Loss=0.5289
+Iteration   20 Loss=0.4630
+Iteration   30 Loss=0.4175
+Iteration   40 Loss=0.3578
+Iteration   50 Loss=0.3178
+Iteration   60 Loss=0.3213
+Iteration   70 Loss=0.3002
+Iteration   80 Loss=0.2925
+Iteration   90 Loss=0.2912
+Iteration  100 Loss=0.2578
+Iteration  110 Loss=0.3011
+Iteration  120 Loss=0.2724
+Iteration  130 Loss=0.2729
+Iteration  140 Loss=0.2470
+begin to calculate device scores
+Done
+[10/Jan/2021 12:45:26] "GET /get_algorithms/ HTTP/1.1" 200 3344
+[10/Jan/2021 12:45:29] "GET /get_nodes/ HTTP/1.1" 200 12863
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:45:32] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+[10/Jan/2021 12:45:37] "GET /node/?node_id=0&depth=1 HTTP/1.1" 200 35734
+[10/Jan/2021 12:45:55] "GET /node/?node_id=311&depth=1 HTTP/1.1" 200 35734
+[10/Jan/2021 12:46:03] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2377
+[10/Jan/2021 12:46:04] "GET /get_algorithms/ HTTP/1.1" 200 3344
+[10/Jan/2021 12:46:37] "GET /get_nodes/ HTTP/1.1" 200 12863
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:46:48] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:46:51] "GET /node/?node_id=14330&depth=1 HTTP/1.1" 500 61814
+[10/Jan/2021 12:46:56] "GET /get_nodes/ HTTP/1.1" 200 12863
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 12:46:59] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+[10/Jan/2021 12:47:03] "GET /node/?node_id=848&depth=1 HTTP/1.1" 200 7620
+[10/Jan/2021 12:48:30] "GET /get_algorithms/ HTTP/1.1" 200 3344
+[10/Jan/2021 13:35:53] "GET /get_algorithms/ HTTP/1.1" 200 3718
+/home/wangqingqin/SiemensProject/backend/backend/views.py changed, reloading.
+Watching for file changes with StatReloader
+Using backend: pytorch
+[10/Jan/2021 13:38:43] "GET /get_algorithms/ HTTP/1.1" 200 3718
+[10/Jan/2021 13:38:46] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2377
+[10/Jan/2021 13:38:50] "GET /node/?node_id=773&depth=1 HTTP/1.1" 200 8592
+[10/Jan/2021 13:38:54] "GET /get_devices/ HTTP/1.1" 200 2621
+[10/Jan/2021 13:38:57] "GET /get_nodes/ HTTP/1.1" 200 12660
+[10/Jan/2021 13:38:58] "GET /get_edges/ HTTP/1.1" 200 5473
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 16:59:35] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+[10/Jan/2021 16:59:37] "GET /get_algorithms/ HTTP/1.1" 200 3718
+[10/Jan/2021 17:01:31] "GET /get_algorithms/ HTTP/1.1" 200 3718
+[10/Jan/2021 17:05:28] "GET /get_nodes/ HTTP/1.1" 200 12660
+[10/Jan/2021 17:05:34] "GET /get_devices/ HTTP/1.1" 200 2621
+[10/Jan/2021 17:05:36] "GET /get_nodes/ HTTP/1.1" 200 12660
+[10/Jan/2021 17:07:38] "GET /get_devices/ HTTP/1.1" 200 2621
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 17:10:12] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+Internal Server Error: /node/
+Traceback (most recent call last):
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wangqingqin/anaconda3/lib/python3.7/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wangqingqin/SiemensProject/backend/backend/views.py", line 19, in get_json_by_node_id_and_depth_from_neo4j
+    for node in data[0]["collect(DISTINCT na)"]:
+IndexError: list index out of range
+[10/Jan/2021 17:10:15] "GET /node/?node_id=2009911&depth=1 HTTP/1.1" 500 61834
+[10/Jan/2021 17:10:19] "GET /node/?node_id=848&depth=1 HTTP/1.1" 200 8592
+[10/Jan/2021 17:22:39] "GET /node/?node_id=848&depth=2 HTTP/1.1" 200 54132
+[10/Jan/2021 17:22:48] "GET /node/?node_id=848&depth=1 HTTP/1.1" 200 8592
+[10/Jan/2021 17:23:39] "GET /get_node_paths/?node=0 HTTP/1.1" 200 2377
+[10/Jan/2021 17:23:44] "GET /get_node_paths/?node=848 HTTP/1.1" 200 2383
+[12/Jan/2021 09:22:50] "GET /get_nodes/ HTTP/1.1" 200 12660
+[12/Jan/2021 09:22:50] "GET /get_edges/ HTTP/1.1" 200 5473
+[12/Jan/2021 09:22:52] "GET /get_devices/ HTTP/1.1" 200 2621
+[12/Jan/2021 09:22:53] "GET /node/?node_id=773&depth=1 HTTP/1.1" 200 8592
+[12/Jan/2021 09:26:01] "GET /get_algorithms/ HTTP/1.1" 200 3718
+python: can't open file 'backend/manage.py': [Errno 2] No such file or directory
