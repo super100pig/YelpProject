@@ -1,11 +1,13 @@
 <template>
-  <div style="margin-left:20px;margin-top:20px;">
-    <div>
+  <div >
+    <h1>商户数据</h1>
+
+    <!-- <div>
       <el-select v-model="filterModule" placeholder="请选择数据">
         <el-option label="数据1" value="数据1"></el-option>
       </el-select>
       <el-button @click="this.show_data" type="primary">显示</el-button>
-    </div>
+    </div> -->
 
 <!--    <el-dialog title="系统性能" :visible.sync="dialogTableVisible" @opened="drawBar" width="80%">-->
 <!--      <div id="barGraph" style="height: 800px;"></div>-->
@@ -18,11 +20,12 @@
         style="width: 100%"
         @selection-change="handleSelectionChange"
     >
-      <el-table-column prop="node" label="零件名称" width="120" sortable></el-table-column>
-      <el-table-column prop="node_id" label="零件id" width="120" sortable></el-table-column>
-      <el-table-column prop="label" label="标签" width="120" sortable></el-table-column>
-      <el-table-column prop="score" label="分数" width="240" sortable></el-table-column>
-      <el-table-column prop="node_path" label="追溯路径" width="480" sortable></el-table-column>
+      <el-table-column prop="business_id" label="商户ID" width="220" sortable></el-table-column>
+      <el-table-column prop="name" label="名称" width="220" sortable></el-table-column>
+      <el-table-column prop="address" label="地址" width="220" sortable></el-table-column>
+      <el-table-column prop="city" label="城市" sortable></el-table-column>
+      <el-table-column prop="stars" label="评星" sortable></el-table-column>
+      <el-table-column prop="review_count" label="评论数" sortable></el-table-column>
     </el-table>
   </div>
 </template>
@@ -39,18 +42,7 @@ export default {
   data() {
     return {
       dialogTableVisible: false,
-      tableData: [
-        {'node': 1330165, 'label': 0},
-        {'node': 1204989, 'label': 0},
-        {'node': 1514576, 'label': 0},
-        {'node': 1893100, 'label': 0},
-        {'node': 107796, 'label': 1},
-        {'node': 1019072, 'label': 0},
-        {'node': 2122335, 'label': 0},
-        {'node': 1399821, 'label': 0},
-        {'node': 1799873, 'label': 0},
-        {'node': 1875400, 'label': 0}
-      ],
+      tableData: [{"business_id":"6iYb2HFDywm3zjuRg0shjw","name":"Oskar Blues Taproom","address":"921 Pearl St","city":"Boulder","stars":4.0,"review_count":86},{"business_id":"tCbdrRPZA0oiIYSmHG3J0w","name":"Flying Elephants at PDX","address":"7000 NE Airport Way","city":"Portland","stars":4.0,"review_count":126},{"business_id":"bvN78flM8NLprQ1a1y5dRg","name":"The Reclaimory","address":"4720 Hawthorne Ave","city":"Portland","stars":4.5,"review_count":13},{"business_id":"oaepsyvc0J17qwi8cfrOWg","name":"Great Clips","address":"2566 Enterprise Rd","city":"Orange City","stars":3.0,"review_count":8},{"business_id":"PE9uqAjdw0E4-8mjGl3wVA","name":"Crossfit Terminus","address":"1046 Memorial Dr SE","city":"Atlanta","stars":4.0,"review_count":14},{"business_id":"D4JtQNTI4X3KcbzacDJsMw","name":"Bob Likes Thai Food","address":"3755 Main St","city":"Vancouver","stars":3.5,"review_count":169},{"business_id":"t35jsh9YnMtttm69UCp7gw","name":"Escott Orthodontics","address":"2511 Edgewater Dr","city":"Orlando","stars":4.5,"review_count":7},{"business_id":"jFYIsSb7r1QeESVUnXPHBw","name":"Boxwood Biscuit","address":"740 S High St","city":"Columbus","stars":4.5,"review_count":11},{"business_id":"N3_Gs3DnX4k9SgpwJxdEfw","name":"Lane Wells Jewelry Repair","address":"7801 N Lamar Blvd, Ste A140","city":"Austin","stars":5.0,"review_count":30},{"business_id":"tXvdYGvlEceDljN8gt2_3Q","name":"Capital City Barber Shop","address":"615 W Slaughter Ln, Ste 113","city":"Austin","stars":4.0,"review_count":5},{"business_id":"rYs_1pNB_RMtn5WQh55QDA","name":"Chautauqua General Store","address":"100 Clematis Dr","city":"Boulder","stars":3.5,"review_count":5},{"business_id":"hCABMnKtwo4Y9alQDxh2kw","name":"Star Kreations Salon and Spa","address":"124 Newbury St, Unit C","city":"Peabody","stars":4.0,"review_count":8},{"business_id":"HPA_qyMEddpAEtFof02ixg","name":"Mr G's Pizza & Subs","address":"474 Lowell St","city":"Peabody","stars":4.0,"review_count":39},{"business_id":"ufCxltuh56FF4-ZFZ6cVhg","name":"Sister Honey's","address":"247 E Michigan St","city":"Orlando","stars":4.5,"review_count":135},{"business_id":"i_t_30RYVUDdZzFIcw80NQ","name":"Uncle Sam's Pawn Shop","address":"225 E Main St","city":"Columbus","stars":4.0,"review_count":5},{"business_id":"g7CEhqBIpwTg6ERcMkCmrQ","name":"Finish Line Car Wash","address":"5510 Memorial Dr","city":"Stone Mountain","stars":2.5,"review_count":11},{"business_id":"GfWJ19Js7wX9rwaHQ7KbGw","name":"Everything POP Shopping & Dining","address":"1050 Century Dr","city":"Orlando","stars":3.0,"review_count":7},{"business_id":"MUeUyqhMja-nnmvgP4rBBg","name":"Saratoga Resort Villas","address":"4787 W Irlo Bronson Hwy","city":"Kissimmee","stars":3.5,"review_count":55},{"business_id":"6fT0lYr_UgWSCZs_w1PBTQ","name":"Salter School","address":"2 Florence St","city":"Malden","stars":2.0,"review_count":5},{"business_id":"dmbbf3AqeG61_QHRZi1M1w","name":"RaceTrac","address":"350 W Sand Lake Rd","city":"Pine Castle","stars":3.5,"review_count":5}],
       time_range: [new Date(2018, 0, 28), new Date(2020, 2, 1)],
       filterModule: "数据1"
     };

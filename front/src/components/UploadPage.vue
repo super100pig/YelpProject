@@ -1,22 +1,28 @@
-<template>
+<template> 
+
   <div>
-    <el-row>
-      <el-col>
-        <a>点数据所在目录：</a>
-        <el-input value="D:/node1.csv"></el-input>
-      </el-col>
-      <el-col>
-        <a>边数据所在目录：</a>
-        <el-input value="D:/edge1.csv"></el-input>
-      </el-col>
-      <el-col>
-        <a>数据名称：</a>
-        <el-input value="数据1"></el-input>
-      </el-col>
-    </el-row>
-    <el-button type="primary" @click="open1">
-      上传
-    </el-button>
+    <h1>请输入文件路径</h1>
+    <div style="margin-top: 15px;">
+      <el-input placeholder="*.json" v-model="input1">
+        <template slot="prepend">商户数据所在目录</template>
+      </el-input>
+    </div>
+    <div style="margin-top: 15px;">
+      <el-input placeholder="*.json" v-model="input2">
+        <template slot="prepend">用户数据所在目录</template>
+      </el-input>
+    </div>
+    <div style="margin-top: 15px;">
+      <el-input placeholder="*.json" v-model="input3">
+        <template slot="prepend">评论数据所在目录</template>
+      </el-input>
+    </div>
+    <div style="margin-top: 15px;">
+      <el-button type="primary" @click="open1">
+        上传
+      </el-button>
+    </div>
+
   </div>
 </template>
 
@@ -26,7 +32,11 @@ function wait(ms) {
 }
 export default {
   data() {
-    return {algorithm: ""}
+    return {
+      input1: "D:/business.json",
+      input2: "D:/user.json",
+      input3: "D:/comment.json",
+      algorithm: ""}
   },
   methods: {
     open1() {
@@ -41,3 +51,12 @@ export default {
   }
 }
 </script>
+
+<style>
+  .el-select .el-input {
+    width: 130px;
+  }
+  .input-with-select .el-input-group__prepend {
+    background-color: #fff;
+  }
+</style>

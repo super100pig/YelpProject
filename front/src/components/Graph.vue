@@ -1,6 +1,22 @@
 <template>
-  <div style="margin-left:20px;margin-top:20px;">
-    <el-row type="flex" :gutter="20">
+  <div style="">
+    <h1>请输入要查询的商户</h1>
+      <el-form :inline="true" class="demo-form-inline" style="margin-top: 15px;">
+        <el-form-item label="商户id">
+          <el-input v-model="selectedNode" style="width: 300px" placeholder="审批人"></el-input>
+        </el-form-item>
+        <el-form-item label="结点深度">
+          <el-select v-model="neighDegree" placeholder="活动区域">
+            <el-option label="1" value="1"></el-option>
+            <el-option label="2" value="2"></el-option>
+          </el-select>
+        </el-form-item>
+        <el-form-item>
+          <el-button type="primary" @click="onSubmit">查询</el-button>
+        </el-form-item>
+      </el-form>
+
+    <!-- <el-row type="flex" :gutter="20">
       <el-col :span="7">
         <a style="font-size: small">零件编号：</a>
         <el-input style="width: 300px" v-model="selectedNode" placeholder="请输入零件编号"></el-input>
@@ -18,7 +34,7 @@
       <el-col :span="4">
         <el-button type="primary" @click="load_and_show">可视化结果</el-button>
       </el-col>
-    </el-row>
+    </el-row> -->
     <el-dialog title="训练参数" :visible.sync="setParametersVisible">
       <el-form :model="parameters">
         <el-form-item label="最小支持度" :label-width="formLabelWidth">
@@ -154,236 +170,69 @@ let graph_data = {
   "nodes": [
     {
       "labels": [
-        "Component"
+        "Business"
       ],
-      "id": 1,
+      "id": 0,
       "properties": {
-        "name": "Component 1",
+        "name": "Otown Tan",
         "status": "black"
       },
-      "showName": "Component 1"
-    },
-    {
-      "labels": [
-        "Component"
-      ],
-      "id": 2,
-      "properties": {
-        "name": "Component 2",
-        "status": "gray"
-      },
-      "showName": "Component 2"
-    },
-    {
-      "labels": [
-        "Component"
-      ],
-      "id": 3,
-      "properties": {
-        "name": "Component 3",
-        "status": "gray"
-      },
-      "showName": "Component 3"
-    },
-    {
-      "labels": [
-        "Component"
-      ],
-      "id": 4,
-      "properties": {
-        "name": "Component 4",
-        "status": "black"
-      },
-      "showName": "Component 4"
-    },
-    {
-      "labels": [
-        "Component"
-      ],
-      "id": 5,
-      "properties": {
-        "name": "Component 5",
-        "status": "white"
-      },
-      "showName": "Component 5"
-    },
-    {
-      "labels": [
-        "Component"
-      ],
-      "id": 6,
-      "properties": {
-        "name": "Component 6",
-        "status": "white"
-      },
-      "showName": "Component 6"
-    },
-    {
-      "labels": [
-        "Component"
-      ],
-      "id": 7,
-      "properties": {
-        "name": "Component 7",
-        "status": "white"
-      },
-      "showName": "Component 7"
+      "showName": "Otown Tan"
     }
   ],
-  "relationships": [
-    {
-      "startNode": 2,
-      "endNode": 3,
-      "source": 2,
-      "target": 3,
-      "id": 201,
-      "type": "rel2",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    },
-    {
-      "startNode": 1,
-      "endNode": 4,
-      "source": 1,
-      "target": 4,
-      "id": 202,
-      "type": "rel2",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    },
-    {
-      "startNode": 4,
-      "endNode": 3,
-      "source": 4,
-      "target": 3,
-      "id": 203,
-      "type": "rel2",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    },
-    {
-      "startNode": 4,
-      "endNode": 6,
-      "source": 4,
-      "target": 6,
-      "id": 204,
-      "type": "rel2",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    },
-    {
-      "startNode": 5,
-      "endNode": 6,
-      "source": 5,
-      "target": 6,
-      "id": 205,
-      "type": "rel2",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    },
-    {
-      "startNode": 6,
-      "endNode": 7,
-      "source": 6,
-      "target": 7,
-      "id": 206,
-      "type": "rel2",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    },
-    {
-      "startNode": 1,
-      "endNode": 2,
-      "source": 1,
-      "target": 2,
-      "id": 102,
-      "type": "rel",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    },
-    {
-      "startNode": 1,
-      "endNode": 3,
-      "source": 1,
-      "target": 3,
-      "id": 101,
-      "type": "rel",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    },
-    {
-      "startNode": 4,
-      "endNode": 2,
-      "source": 4,
-      "target": 2,
-      "id": 103,
-      "type": "rel",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    },
-    {
-      "startNode": 4,
-      "endNode": 3,
-      "source": 4,
-      "target": 3,
-      "id": 104,
-      "type": "rel",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    },
-    {
-      "startNode": 4,
-      "endNode": 5,
-      "source": 4,
-      "target": 5,
-      "id": 105,
-      "type": "rel",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    },
-    {
-      "startNode": 5,
-      "endNode": 6,
-      "source": 5,
-      "target": 6,
-      "id": 106,
-      "type": "rel",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    },
-    {
-      "startNode": 5,
-      "endNode": 7,
-      "source": 5,
-      "target": 7,
-      "id": 107,
-      "type": "rel",
-      "properties": {},
-      "linknum": "1",
-      "showName": ""
-    }
-  ]
+  "relationships": []
 };
+
+let users = [
+  "Trigger",
+  "William",
+  "Jen",
+  "Danielle",
+  "Dan",
+  "Jessica",
+  "Christine",
+  "Bekka",
+  "J",
+  "Bernard",
+  "Brittany",
+  "Didier",
+  "Hillary"
+]
+
+for(let i = 0; i < users.length; i++) {
+  graph_data.nodes.push({
+    "labels": [
+      "User"
+    ],
+    "id": i + 1,
+    "properties": {
+      "name": users[i],
+      "status": "black"
+    },
+    "showName": users[i]
+  })
+
+  graph_data.relationships.push({
+    "startNode": i + 1,
+    "endNode": 0,
+    "source": 0,
+    "target": i + 1,
+    "id": i + 1,
+    "type": "rel2",
+    "properties": {},
+    "linknum": "1",
+    "showName": ""
+  })
+}
+
 let select_mode = false;
 let exist_relations = [];
 export default {
   data() {
     return {
-      selectedNode: 'Component 4',
+      selectedNode: 'GfWJ19Js7wX9rwaHQ7KbGw',
       selectedNodeId: 2009911,
-      neighDegree: 2,
+      neighDegree: 1,
       time_range: [new Date(2018, 0, 1, 0, 0), new Date(2020, 11, 31, 23, 59)],
       select_mode_val: false,
       setParametersVisible: false,

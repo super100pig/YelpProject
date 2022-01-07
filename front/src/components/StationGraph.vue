@@ -1,5 +1,5 @@
 <template>
-  <div style="margin-left:20px;margin-top:20px;">
+  <!-- <div style="margin-left:20px;margin-top:20px;">
     <el-row type="flex" :gutter="20">
       <el-col :span="7">
         <a style="font-size: small">零件编号：</a>
@@ -12,7 +12,8 @@
       </el-col>
     </el-row>
     <div id="neo4jd3" style="height: 800px;"></div>
-  </div>
+  </div> -->
+  <img src="../img/871640065027_.pic_hd.jpg" />
 </template>
 
 <script>

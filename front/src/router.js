@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Frame from "@/components/Frame";
 import Graph from "@/components/Graph";
-import StructureGraph from "@/components/StructureGraph";
 import AttributeGraph from "@/components/AttributeGraph";
 import DeviceTable from "@/components/DeviceTable";
 import NodeTable from "@/components/NodeTable"
@@ -21,9 +20,6 @@ export default new Router({
                 {
                     path: 'uploadPage',
                     component: UploadPage
-                }, {
-                    path: 'structureGraph',
-                    component: StructureGraph
                 }, {
                     path: 'attributeGraph',
                     component: AttributeGraph

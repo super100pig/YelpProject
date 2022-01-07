@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from backend.views import get_json_by_node_id_and_depth_from_neo4j, run_new_algorithm, get_all_algorithm, get_all_nodes, get_all_edges, get_all_devices, get_node_paths
+from backend.views import get_json_by_node_id_and_depth_from_neo4j, run_new_algorithm, get_all_algorithm, get_all_nodes, get_all_edges, get_all_devices, get_node_paths, get_score
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
@@ -26,4 +26,5 @@ urlpatterns = [
     path('get_edges/', get_all_edges),
     path('get_devices/', get_all_devices),
     path('get_node_paths/', get_node_paths),
+    path('get_score/', get_score),
 ]

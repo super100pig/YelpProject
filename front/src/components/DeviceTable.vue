@@ -1,13 +1,15 @@
 <template>
-  <div style="margin-left:20px;margin-top:20px;">
-    <div>
+  <div style="">
+    <h1>数据勘探</h1>
+
+    <!-- <div>
       <el-select v-model="filterModule" placeholder="请选择数据">
         <el-option label="数据1" value="数据1"></el-option>
       </el-select>
       <el-button @click="this.show_data" type="primary">显示</el-button>
-    </div>
+    </div> -->
 
-    <el-table
+    <!-- <el-table
         ref="multipleTable"
         :data="tableData"
         tooltip-effect="dark"
@@ -16,7 +18,20 @@
     >
       <el-table-column prop="device_id" label="设备id" width="120" sortable></el-table-column>
       <el-table-column prop="score" label="分数" width="240" sortable></el-table-column>
-    </el-table>
+    </el-table> -->
+
+    <el-carousel :interval="2000" type="card" height="400px">
+
+      <el-carousel-item>
+        <img src="../img/2-1.png" alt=" "/>
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="../img/2-2.png" alt=" "/>
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="../img/3.png" alt=" "/>
+      </el-carousel-item>
+    </el-carousel>
   </div>
 </template>
 

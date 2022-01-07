@@ -6,6 +6,8 @@ import datetime
 from concurrent.futures import ProcessPoolExecutor
 from backend.algorithm import do_some_work
 from backend import db_setting
+from tensorflow import keras
+from bert_serving.client import BertClient
 
 
 def get_json_by_node_id_and_depth_from_neo4j(request):
@@ -236,3 +238,14 @@ def get_node_paths(request):
     db.close()
 
     return HttpResponse(json.dumps(graph_data))
+
+
+def get_score(request):
+    bc = BertClient()
+    request_content = request.GET
+    text = request_content.get("text")
+    model = keras.models.load_model('/home/panwentao/yelp2vec_model.h5')
+    x_vec = bc.encode([text])
+    y = model.predict(x_vec)
+    res = {'score': float(y[0][0])}
+    return HttpResponse(json.dumps(res))
